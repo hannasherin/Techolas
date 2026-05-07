@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Registration Form</H1>
+    <br>
+
+<form action="">
+<!-- User-id  -->
+    <label for="userid">User Id:</label>
+    <input type="text" id="userid" required minlength="5" max="12" title=" enter max character 5 and max character 12"><br> <br>
+<!-- password  -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" required minlength="7" maxlength="12" title="must be lenght 7 to 12"><br><br>
+<!-- name  -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" required pattern="[A-Za-z]+" title="alphabets only"><br><br>
+<!-- Address -->
+    <label for="address">Address:</label>
+    <textarea name="address" id="address" placeholder="Optional." title="must select a country"></textarea><br><br>
+
+<!-- country  -->
+    <label for="country">Country:</label>
+    <select name="" id="country" required>
+        <option value="" disabled selected>(Please select a country)</option>
+        <option value="">USA</option>
+          <option value="">UAE</option>
+            <option value="">INDIA</option>
+    </select><br><br>
+<!-- zip-code  -->
+    <label for="">ZIP CODE:</label>
+    <input type="Number" required pattern="[0-9]+" title="must be numeric values"><br><br>
+<!-- email  -->
+    <label for="">Email:</label>
+    <input type="email" required title="must be a valid email"><br><br>
+<!-- gender -->
+    <label for="gender">SEX:</label>
+    <input type="radio" id="gender" name="sex">
+    <label for="gender">Male</label>
+    <input type="radio" id="gender" name="sex">
+    <label for="gender">Female</label><br><br>
+<!-- language -->
+    <label for="">LAnguage:</label>
+     <input type="checkbox" required>English
+     <input type="checkbox" required >NOn English
+     <br><br>
+<!-- about -->
+     <label for="">About:</label>
+     <textarea name="" id="" cols="20" rows="4" required placeholder="optional."></textarea>
+     <br><br>
+<!-- button  -->
+     <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

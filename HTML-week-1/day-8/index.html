@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form validation  -->
+    <form action="" novalidate>
+
+        <!-- min-length and max-length used for min-max character encoded  -->
+        <!-- min and max are attribute that min number and maximum number  -->
+        <!-- username -->
+        <label for="">Username</label>
+        <input type="text" required minlength="3" maxlength="6"><br><br>
+
+
+        <!-- Age  -->
+        <label for="">Age :</label>
+        <input type="number" min="20" max="35" required> <br><br>
+
+
+
+        <button type="submit">Submit</button>
+    </form>
+    <br> <br>
+
+    <!-- Regular Expression -->
+    <form action="">
+        <!-- username  -->
+        <!-- + used for multiple character  not repeatation-->
+
+        <label for="">Username :</label> <br>
+        <!-- <input type="text" required pattern="[A-Za-z ]{3,6}" title="Enter  minimum three  maximum six letters" autofocus><br><br> -->
+        <!-- <input type="text" required pattern="[A-Za-z ]{3,}" title="Enter  minimum three and inifinity letters" autofocus><br><br> -->
+        <input type="text" required pattern="[A-Za-z@#$%_. ]{3}" title="Enter  minimum three letters" autofocus><br><br>
+        <!-- Phone number  -->
+        <label for="">Number</label><br>
+        <input type="tel" required pattern="[0-9]+" title="Numbers only"> <br> <br>
+        <!-- number  -->
+
+
+
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Layout</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .box {
+            background: linear-gradient(135deg, #00ff00 0%, #00dd00 100%);
+            border: 3px solid #000;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body class="bg-light p-3">
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="row mb-3">
+        <div class="col">
+            <div class="box">Header</div>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="row mb-3">
+
+        <!-- Sidebar -->
+        <div class="col-md-3 mb-3 mb-md-0">
+            <div class="box h-100 d-flex align-items-center justify-content-center">
+                Side Bar
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="col-md-9">
+
+            <!-- Content 1 -->
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="box">Content 1</div>
+                </div>
+            </div>
+
+            <!-- Content 2 & 3 -->
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="box">Content 2</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">Content 3</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+        <div class="col">
+            <div class="box">Footer</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

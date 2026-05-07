@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    contact
+    <!-- header  -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header> <br> <br>
+
+    <!-- main  -->
+    <main>
+        <section>
+            <h2 align="center">Get In Touch</h2>
+            <table width="100%" cellpadding="30">
+                <tbody>
+                    <tr>
+                        <td width="50%">
+                            <h3>Send Us a message</h3>
+                            <form action="">
+                                <!-- name  -->
+                                <label for="name">Full Name : </label><br>
+                                <input type="text" id="name" name="name" minlength="4" maxlength="8" placeholder="Enter Name" autocomplete="off"
+                                    autofocus pattern="[A-Z a-z]+" title="Only letters">
+                                <br>
+                                <!-- email  -->
+                                <label for="email">Email : </label> <br>
+                                <input type="email" id="email" name="email" placeholder="Enter Email" required title="example@gmail.com"> <br>
+                                <!-- subject  -->
+                                <label for="">Subject : </label> <br>
+                                <select name="subject" id="">
+                                    <option value="" disabled selected>choose</option>
+                                    <option value="">Table Reservation</option>
+                                    <option value="">catering Inquiry</option>
+                                </select><br> 
+                                           <!-- contact  -->
+                                <label for="">phone Number : </label> <br>
+                                <input type="tel" pattern="[0-9]{10}" title="Numbers only" required>    <br>        
+
+                                <!-- message  -->
+                                <label for="">Message : </label> <br>
+                                <textarea name="message" id="" rows="5" placeholder="message"></textarea> <br><br>
+                                <button type="submit">Send Message</button>
+
+
+                            </form>
+                        </td>
+                        <!-- right side  -->
+                        <td width="50%">
+                            <h3>Contact Information</h3>
+                            <p><strong>Address :- Gaziabad,New Delhi,India</strong></p>
+                            <p><strong>Phone :- +91 7664128376</strong></p>
+                            <p><strong> Email :- gfwufgugefy@gmail.com</strong></p>
+                            <br>
+                            <h3>Find Us On map</h3>
+                            <iframe width="250" height="150"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223978.15678946988!2d77.23021355892985!3d28.699854479962806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1770916681156!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main> <br> <br>
+
+    <!-- footer  -->
+    <footer width="100%">
+        <!-- Main layout table -->
+        <table width="100%" cellpadding="20" border="0">
+            <tr>
+                <!-- Left Side: Brand and Subscribe -->
+                <td align="left" width="50%">
+                    <h2>ladle</h2>
+                    <h6>SUBSCRIBE FOR LATEST UPDATES</h6>
+                    <form action="">
+                        <input type="email" placeholder="Enter your Email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </td>
+
+                <!-- Right Side: Quick Links -->
+                <td align="center" width="50%">
+                    <h5>QUICK LINKS</h5>
+                    <dl>
+                        <dt>Hotel</dt>
+                        <dt>Dining</dt>
+                        <dt>Event Venue</dt>
+                    </dl>
+                </td>
+            </tr>
+
+            <!-- Bottom Row: Copyright -->
+            <tr>
+                <td colspan="2" align="center">
+                    <hr> <!-- Adds a horizontal line -->
+                    <p>&copy; 2026 The Hotel Company Limited. All Rights Reserved.</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>

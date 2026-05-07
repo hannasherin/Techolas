@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Hii</h1>
+
+
+<script>
+    const user='Hanna Sherin'
+    localStorage.setItem('Username',user)
+
+    const data={
+        username : 'Zara',
+        age:23,
+        city:'calicut'
+    }
+    // const jsondata= JSON.stringify(data)
+    // const jsobj= JSON.parse(jsondata)
+    // console.log(jsobj)
+    // console.log(data)
+    // console.log(jsondata)
+    
+    // localStorage.removeItem('Userdetails')
+    localStorage.setItem("Userdetails",JSON.stringify(data))
+     const showdata = localStorage.getItem("Userdetails")
+     console.log(JSON.parse(showdata))
+
+    //  sessionStorage 
+     const course="mern"
+     sessionStorage.setItem('Course',course)
+
+     const details={
+        name : 'hanna',
+        age : 25
+     }
+     const jsondatas=JSON.stringify(details)
+     console.log(jsondatas)
+     const jsobjc= JSON.parse(jsondatas)
+     console.log(jsondatas)
+     
+     sessionStorage.setItem('details',JSON.stringify(details))
+     const datas=sessionStorage.getItem('details')
+     console.log(JSON.parse(datas))
+
+</script>
+</body>
+</html>
