@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <h1 id="txt">Hello World</h1>
+
+ <input type="text" name="gender" value="male">
+<input type="text" name="gender" value="female">
+<br>
+
+<p class="para">First paragraph</p>
+<p class="para2">Second paragraph</p>
+
+<div id="title"></div>    
+
+<p class="info">Hello My Girls</p>
+<p class="info">Hello My Girls</p>
+
+
+    <script>
+
+const heading=document.getElementById('txt')
+heading.textContent= 'New Text' //modify the  content (.textcontent)
+heading.style.color='red' //.style.property
+heading.style.background='yellow'
+
+
+// .getElementsByName
+const genderoption = document.getElementsByName('gender')
+console.log(genderoption[0])
+genderoption[0].style.background='blue';
+genderoption[1].style.background='brown';
+genderoption[1].style.border='1px solid green'
+
+// .getElementsByClassName
+const item=document.getElementsByClassName('para')
+console.log(item);
+item[0].style.color='browm';
+
+// queryselector
+let head=document.querySelector('#title')
+head.innerHTML='<p>Greet something special</p>'
+
+head.style.color='blue'
+
+
+let infoText=document.querySelector('.info')
+console.log(infoText)
+infoText.style.color='green';
+infoText.style.fontSize='20px'
+
+
+
+    </script>
+</body>
+</html>

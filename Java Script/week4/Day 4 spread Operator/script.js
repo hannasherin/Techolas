@@ -57,6 +57,6 @@
 // console.log(updateuserage)
 
 // string into array 
-const str='hello'
-const arr=[...str]
-console.log(arr)
+// const str='hello'
+// const arr=[...str]
+// console.log(arr)

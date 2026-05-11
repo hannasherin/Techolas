@@ -13,22 +13,23 @@
 <script>
     const user='Hanna Sherin'
     localStorage.setItem('Username',user)
+   console.log(localStorage.getItem('username')) 
 
     const data={
         username : 'Zara',
         age:23,
         city:'calicut'
     }
-    // const jsondata= JSON.stringify(data)
+    const jsondata= JSON.stringify(data)
     // const jsobj= JSON.parse(jsondata)
     // console.log(jsobj)
     // console.log(data)
-    // console.log(jsondata)
+    console.log(jsondata)
     
     // localStorage.removeItem('Userdetails')
-    localStorage.setItem("Userdetails",JSON.stringify(data))
-     const showdata = localStorage.getItem("Userdetails")
-     console.log(JSON.parse(showdata))
+    // localStorage.setItem("Userdetails",JSON.stringify(data))
+    //  const showdata = localStorage.getItem("Userdetails")
+    //  console.log(JSON.parse(showdata))
 
     //  sessionStorage 
      const course="mern"
