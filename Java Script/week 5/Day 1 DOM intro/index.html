@@ -23,7 +23,7 @@
 
 
     <script>
-
+// .getElementById()
 const heading=document.getElementById('txt')
 heading.textContent= 'New Text' //modify the  content (.textcontent)
 heading.style.color='red' //.style.property
@@ -49,10 +49,13 @@ head.innerHTML='<p>Greet something special</p>'
 head.style.color='blue'
 
 
-let infoText=document.querySelector('.info')
+let infoText=document.querySelectorAll('.info')
 console.log(infoText)
-infoText.style.color='green';
-infoText.style.fontSize='20px'
+infoText.forEach((item)=>{
+    item.textContent='Change Text'
+})
+
+
 
 
 

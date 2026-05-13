@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 class="alh1">Hello</h1>
+    <h1 class="alh1">World</h1>
+    <h1 class="alh1">Applr</h1>
+    <h1 class="alh1">Hanna</h1>
+    <br>
+    
+    <div id="container"></div>
+
+    <p id="para">Remove the paragraph</p>
+
+
+
+
+    <script>
+
+        // .getElementsByTagName('tag name')
+        const allh1 = document.getElementsByTagName('h1')//[1]
+        console.log(allh1)
+        allh1[1].textContent = 'Now'
+
+
+        let head = document.querySelectorAll('.alh1');
+        head.forEach((item) => {
+            item.style.color = 'green'
+            item.style.background = 'yellow'
+        })
+
+        // Create Element 
+
+        // step 1 create a new p tag 
+        const newpara = document.createElement('p');
+
+        // Add text inside the paragraph 
+        newpara.textContent = "Heelo! i was add paragraph using javascript";
+
+        // Add into the container div 
+        const box = document.getElementById('container')
+        box.appendChild(newpara)
+
+        newpara.style.color='red'
+        newpara.style.background='yellow'
+
+
+        // Remove the element using remove() method
+
+        const rem=document.getElementById('para')
+        rem.remove()
+
+
+
+    </script>
+</body>
+
+</html>
