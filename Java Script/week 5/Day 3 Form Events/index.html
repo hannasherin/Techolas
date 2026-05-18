@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+
+<!-- Form Events  -->
+
+<!-- submit  -->
+<form action="" id="myform">
+    <input type="text" id="name" placeholder="Enter your name">
+    <button type="submit">Submit</button>
+</form>
+<p id="message"></p>
+
+<!-- input  -->
+<input type="text" id="username" placeholder="Type here..."> 
+<p id="previewText"></p> 
+<br><br>
+
+<!-- focus  -->
+<input type="text" id="email" placeholder="Email">
+<br><br>
+
+<!-- change  -->
+<select id="country"> 
+<option>India</option> 
+<option>USA</option> 
+<option>UK</option> 
+</select>
+<br><br>
+
+<!-- blur  -->
+ <input type="text" id="age" placeholder="Enter age">
+<br><br>
+
+<!-- reset  -->
+ <form  id="signup">
+    <input type="text" placeholder="Name">
+    <button type="reset">Reset</button>
+ </form>
+
+<script>
+
+// submit 
+const form=document.getElementById('myform')
+const nameinput=document.getElementById('name')
+const message=document.getElementById('message')
+
+form.addEventListener('submit',(event)=>{
+  event.preventDefault() //stop page reload 
+  message.textContent='Hello '+nameinput.value
+
+})
+
+// input 
+document.getElementById("username").addEventListener("input", function(){ 
+document.getElementById("previewText").textContent = this.value; 
+}); 
+
+// focus 
+document.getElementById("email").addEventListener("focus",function(){
+    this.style.backgroundColor='yellow'
+})
+
+// blur 
+document.getElementById("email").addEventListener("blur",function(){
+    this.style.backgroundColor='white'
+})
+
+
+// change 
+document.getElementById("country").addEventListener("change", function(){ 
+alert("You selected: " + this.value); 
+}); 
+
+// blur 
+
+document.getElementById("age").addEventListener("blur",function(){
+    alert("You left to the input field")
+})
+
+
+// reset 
+document.getElementById('signup').addEventListener("reset",function(){
+    alert('Form cleared')
+})
+
+
+</script>
+
+
+    
+</body>
+</html>

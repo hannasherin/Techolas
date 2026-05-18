@@ -1,18 +1,19 @@
-// function getNumber(){
-//     return new Promise((resolve) => {
-// setTimeout (()=> resolve(10),2000)
-//     })
-// }
+function getNumber(){
+    return new Promise((resolve) => {
+setTimeout (()=> resolve(10),2000)
+    })
+}
 
-// async function showNumber(){
-//     console.log("getting number..")
-//     let result= await getNumber()
-//     console.log('result:' , result)
-// }
+async function showNumber(){
+    console.log("getting number..")
+    let result= await getNumber()
+    console.log('result:' , result)
+}
 
-// showNumber()
+showNumber()
 
 
+// apicall using fetch  function
  async function fetchData(){
     const responce= await fetch('https://jsonplaceholder.typicode.com/users')
     console.log(responce)

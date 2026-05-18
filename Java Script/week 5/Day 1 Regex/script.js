@@ -17,7 +17,7 @@
 // 3-character classes-match a group character
 
 // a- custom set []
-// let pattern=/[cr]at/;
+// let pattern=/[^cr]at/;
 //  let pattern=/[a-z]at/ // also add range [a-z][0-9]
 // let result=pattern.test('rat or cat')
 // console.log(result)

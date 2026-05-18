@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard event</title>
+</head>
+<body>
+    
+
+   <h1 id="count">0</h1>
+   <button  id="inbtn">Increment</button>
+   <button  id="debtn">Decrement</button>
+
+
+    <script>
+    let num=0
+
+    // increament
+    const increase=document.getElementById('inbtn')
+    increase.addEventListener('click',()=>{
+       num++
+        document.getElementById('count').textContent= num
+    })
+
+    // decreament
+    const decrease=document.getElementById('debtn')
+    decrease.addEventListener('click',()=>{
+        num--
+        document.getElementById('count').textContent=num
+    })
+
+
+
+
+    // function increase(){
+    //     num++
+    //     document.getElementById('count').textContent=num
+    // }
+
+    // function decrease(){
+    //     num--
+    //     document.getElementById('count').textContent=num
+    // }
+    //  create addEventListener
+
+    </script>
+</body>
+</html>

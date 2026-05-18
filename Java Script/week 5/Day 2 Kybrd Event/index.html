@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyboard event</title>
+    <title>keyboard events</title>
 </head>
 <body>
     
+    <input type="text" id="box" placeholder="Type Somethings...">
+    <p id="output"></p>
 
 
 
     <script>
+        const Box=document.getElementById('box');
+        const Output=document.getElementById('output')
 
+        // Box.addEventListener('keypress', ()=>{
+        //     Output.textContent='Key Pressed....' //its not recommented same to keydown
+        // })
+
+        //  Box.addEventListener('keyup', ()=>{
+        //     Output.textContent='Key Released....'
+        // })
+
+         Box.addEventListener('keydown', ()=>{
+            Output.textContent='Key Pressed....'
+        })
 
 
     </script>
